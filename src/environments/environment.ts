@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://curso-osss.herokuapp.com'
+  baseUrl: 'https://curso-osss.herokuapp.com',
 };
 
 /*
