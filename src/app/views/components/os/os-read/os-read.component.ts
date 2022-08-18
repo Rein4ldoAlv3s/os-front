@@ -35,7 +35,12 @@ export class OsReadComponent implements AfterViewInit {
   findAll(): void {
     //o subscribe aguarda a resposta do Observable 
     this.service.findAll().subscribe((resposta) => {
-      this.lista = resposta;
+      resposta.forEach(x => {
+        if(x.status != "ENCERRADO"){
+          this.lista.push(x);
+        }
+      });
+
       this.listarTecnico();
       this.listaCliente();
       this.dataSource = new MatTableDataSource<OS>(this.lista);

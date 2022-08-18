@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatMenuModule} from '@angular/material/menu';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
@@ -35,6 +36,7 @@ import { OsReadComponent } from './views/components/os/os-read/os-read.component
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
 import { OsViewComponent } from './views/components/os/os-view/os-view.component';
+import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
 
 
 
@@ -56,7 +58,8 @@ import { OsViewComponent } from './views/components/os/os-view/os-view.component
     OsReadComponent,
     OsCreateComponent,
     OsUpdateComponent,
-    OsViewComponent
+    OsViewComponent,
+    OsClosedComponent
   ],
   imports: [
     BrowserModule,
@@ -82,7 +85,8 @@ import { OsViewComponent } from './views/components/os/os-view/os-view.component
     MatInputModule,
     MatDatepickerModule,
     MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule, 
+    MatMenuModule
 
   ],
   providers: [],
